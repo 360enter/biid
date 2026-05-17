@@ -1,0 +1,17 @@
+{
+  "name": "apex-strategic-procurement",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Pages and Workers procurement and contractor bidding platform for Apex Strategic Holdings.",
+  "scripts": {
+    "dev": "wrangler pages dev public --d1 APEX_DB=apex-procurement --kv DOCUMENT_ACCESS=apex-document-access --kv RATE_LIMITS=apex-rate-limits",
+    "deploy": "wrangler pages deploy public",
+    "db:schema": "wrangler d1 execute apex-procurement --file=./schema.sql",
+    "db:seed": "wrangler d1 execute apex-procurement --file=./seed.sql",
+    "validate": "node tools/validate.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

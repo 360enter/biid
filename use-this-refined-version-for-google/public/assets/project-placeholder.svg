@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Apex project placeholder</title>
+  <rect width="1200" height="675" fill="#0f172a"/>
+  <rect x="80" y="80" width="1040" height="515" rx="12" fill="#f8fafc" opacity=".08"/>
+  <path d="M190 470h820M190 390h620M190 310h760M190 230h500" stroke="#0f766e" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="960" cy="220" r="72" fill="#b7791f" opacity=".88"/>
+</svg>

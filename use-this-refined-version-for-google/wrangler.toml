@@ -1,0 +1,25 @@
+name = "apex-strategic-procurement"
+compatibility_date = "2026-05-16"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "APEX_DB"
+database_name = "apex-procurement"
+database_id = "replace-with-cloudflare-d1-database-id"
+
+[[kv_namespaces]]
+binding = "DOCUMENT_ACCESS"
+id = "replace-with-document-access-kv-id"
+
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id = "replace-with-rate-limit-kv-id"
+
+[vars]
+APEX_ENV = "production"
+PUBLIC_BASE_URL = "https://procurement.apexstrategicholdings.com"
+
+# Secrets set with:
+# wrangler secret put DISCORD_WEBHOOK_URL
+# wrangler secret put PAYMENT_PROVIDER_SECRET
+# wrangler secret put ADMIN_SESSION_SECRET

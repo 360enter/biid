@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apex Strategic Holdings procurement and contractor bidding portal.">
+    <title>Apex Strategic Holdings | Procurement Portal</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="topline"></div>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#home" aria-label="Apex Strategic Holdings home">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>Apex Strategic Holdings</strong>
+          <small>Procurement Operations</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#opportunities">Opportunities</a>
+        <a href="#how">Process</a>
+        <a href="#admin">Admin</a>
+        <a href="#security">Security</a>
+      </nav>
+      <button class="mobile-nav-toggle" type="button" aria-label="Open navigation" data-mobile-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <a class="header-cta" href="#opportunities">View Bid Notices</a>
+    </header>
+
+    <aside class="mobile-panel" data-mobile-panel aria-hidden="true">
+      <a href="#opportunities">Opportunities</a>
+      <a href="#how">Process</a>
+      <a href="#admin">Admin</a>
+      <a href="#security">Security</a>
+    </aside>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Managed infrastructure and commercial procurement</p>
+          <h1>Apex Strategic Holdings</h1>
+          <p class="hero-copy">A secure contractor bidding portal for publishing active opportunities, distributing bid packages, managing submissions, and coordinating procurement events for private stakeholders, investors, and partner organizations.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#opportunities">Explore opportunities</a>
+            <a class="btn secondary" href="#submit">Submit a proposal</a>
+          </div>
+          <div class="metric-strip" aria-label="Platform statistics">
+            <div>
+              <strong data-count="412">0</strong>
+              <span>registered vendors</span>
+            </div>
+            <div>
+              <strong data-count="489">0</strong>
+              <span>million USD in open notices</span>
+            </div>
+            <div>
+              <strong data-count="24">0</strong>
+              <span>hour bid desk monitoring</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-band" aria-label="Trust indicators">
+        <div class="section-inner trust-grid">
+          <span>Structured tender records</span>
+          <span>Audit-ready workflows</span>
+          <span>Secure document access</span>
+          <span>Contractor verification</span>
+          <span>Discord operations alerts</span>
+        </div>
+      </section>
+
+      <section class="section" id="opportunities">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Active procurement notices</p>
+              <h2>Project Directory</h2>
+            </div>
+            <p>Search, filter, review public notices, unlock premium bid packages, and initiate proposal submissions from a single contractor workspace.</p>
+          </div>
+
+          <div class="control-panel">
+            <label class="search-field">
+              <span>Search opportunities</span>
+              <input type="search" id="searchInput" placeholder="Search by title, location, category, or issuer">
+            </label>
+            <label>
+              <span>Category</span>
+              <select id="categoryFilter"></select>
+            </label>
+            <label>
+              <span>Status</span>
+              <select id="statusFilter">
+                <option>All</option>
+                <option>Open</option>
+                <option>Prequalification</option>
+                <option>Closing Soon</option>
+              </select>
+            </label>
+            <label>
+              <span>Sort</span>
+              <select id="sortFilter">
+                <option value="deadline">Deadline</option>
+                <option value="value">Estimated value</option>
+                <option value="title">Title</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="category-tabs" id="categoryTabs" aria-label="Category shortcuts"></div>
+
+          <div class="directory-layout">
+            <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+            <aside class="procurement-panel">
+              <h3>Bid Desk Overview</h3>
+              <div class="desk-row"><span>Open packages</span><strong id="openPackageCount">0</strong></div>
+              <div class="desk-row"><span>Next deadline</span><strong id="nextDeadline">--</strong></div>
+              <div class="desk-row"><span>Access model</span><strong>Payment or approval</strong></div>
+              <p>Premium documents remain gated until a contractor completes payment, receives approval, or is granted administrator access.</p>
+              <a class="btn tertiary wide" href="#submit">Start contractor workflow</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="how">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Contractor workflow</p>
+              <h2>How It Works</h2>
+            </div>
+          </div>
+          <div class="workflow-grid">
+            <article>
+              <span>01</span>
+              <h3>Review public notice</h3>
+              <p>Contractors inspect opportunity summaries, deadlines, issuer details, requirements, and public downloadable notices.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Unlock bid package</h3>
+              <p>Premium technical documents, addendums, and drawings are released after secure payment or access approval.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Submit proposal</h3>
+              <p>The guided wizard captures company information, qualification files, commercial terms, and acknowledgments.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Operations notified</h3>
+              <p>Discord webhooks alert administrators about registrations, purchases, inquiries, and bid submissions in real time.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="submit">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Structured submission</p>
+            <h2>Contractor Bid Submission</h2>
+            <p class="lede">A multi-step submission wizard keeps contractor proposals organized, validation-friendly, and ready for audit review.</p>
+            <div class="progress-rail" id="wizardProgress"></div>
+          </div>
+          <form class="wizard" id="bidForm">
+            <fieldset data-step="1">
+              <legend>Company information</legend>
+              <label>Project <select name="projectId" id="bidProjectSelect" required></select></label>
+              <label>Company name <input name="companyName" required placeholder="Registered contractor name"></label>
+              <label>Contact name <input name="contactName" required placeholder="Authorized representative"></label>
+              <label>Email <input type="email" name="email" required placeholder="procurement@example.com"></label>
+              <label>Phone <input name="phone" placeholder="+234..."></label>
+            </fieldset>
+            <fieldset data-step="2" hidden>
+              <legend>Qualification profile</legend>
+              <label>Country <input name="country" placeholder="Country of registration"></label>
+              <label>Registration number <input name="registrationNumber" placeholder="Corporate registration number"></label>
+              <label>Qualification summary <textarea name="qualificationSummary" rows="4" placeholder="Relevant experience, financial capacity, safety record"></textarea></label>
+              <label>Attachment manifest <textarea name="attachments" rows="3" placeholder="List files to upload through R2-backed upload service in production"></textarea></label>
+            </fieldset>
+            <fieldset data-step="3" hidden>
+              <legend>Proposal details</legend>
+              <label>Proposal title <input name="proposalTitle" required placeholder="Technical and commercial proposal"></label>
+              <label>Commercial value <input type="number" name="commercialValue" min="0" placeholder="Amount"></label>
+              <label>Currency <select name="currency"><option>USD</option><option>NGN</option><option>GHS</option><option>EUR</option></select></label>
+              <label class="checkbox"><input type="checkbox" name="acknowledged" required> I certify that this submission is authorized and accurate.</label>
+            </fieldset>
+            <div class="wizard-actions">
+              <button class="btn secondary" type="button" id="prevStep">Back</button>
+              <button class="btn primary" type="button" id="nextStep">Continue</button>
+              <button class="btn primary" type="submit" id="submitBid" hidden>Submit bid</button>
+            </div>
+            <p class="form-status" id="bidStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section muted" id="admin">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Procurement administration</p>
+              <h2>Admin Management Structure</h2>
+            </div>
+            <p>Designed for adding, editing, archiving, and monitoring projects without changing the frontend architecture.</p>
+          </div>
+          <div class="admin-shell">
+            <aside>
+              <button class="admin-tab active" type="button">Projects</button>
+              <button class="admin-tab" type="button">Documents</button>
+              <button class="admin-tab" type="button">Access</button>
+              <button class="admin-tab" type="button">Audit Log</button>
+            </aside>
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Status</th>
+                    <th>Deadline</th>
+                    <th>Package</th>
+                    <th>Operations</th>
+                  </tr>
+                </thead>
+                <tbody id="adminRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="section-inner security-grid">
+          <div>
+            <p class="eyebrow">Cloudflare-native security</p>
+            <h2>Secure, Serverless, Audit-Friendly</h2>
+            <p class="lede">The platform is structured for Cloudflare Workers, Pages Functions, D1, KV, R2 document storage, Turnstile verification, rate limiting, and webhook-based operations monitoring.</p>
+          </div>
+          <div class="security-cards">
+            <article><h3>D1 records</h3><p>Projects, contractors, purchases, bids, and audit events are relational and searchable.</p></article>
+            <article><h3>KV access grants</h3><p>Document unlock windows and entitlement lookups stay fast at the edge.</p></article>
+            <article><h3>R2 documents</h3><p>Premium files are served through signed URLs rather than public object paths.</p></article>
+            <article><h3>Discord alerts</h3><p>Operational events are pushed instantly with structured fields and timestamps.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Apex Strategic Holdings</strong>
+        <p>Enterprise procurement management for infrastructure, utilities, energy, and commercial development mandates.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#opportunities">Bid Notices</a>
+        <a href="#submit">Submissions</a>
+        <a href="#admin">Admin</a>
+        <a href="/docs/ARCHITECTURE.md">Architecture</a>
+      </nav>
+    </footer>
+
+    <dialog class="project-modal" id="projectModal">
+      <div class="modal-frame">
+        <button class="icon-btn modal-close" type="button" aria-label="Close project detail" data-close-modal>×</button>
+        <div id="projectDetail"></div>
+      </div>
+    </dialog>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

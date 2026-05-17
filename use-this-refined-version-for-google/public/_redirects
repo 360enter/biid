@@ -1,0 +1,5 @@
+/projects/* /index.html 200
+/admin/* /index.html 200
+/submit/* /index.html 200
+/payment/* /index.html 200
+/* /index.html 200
